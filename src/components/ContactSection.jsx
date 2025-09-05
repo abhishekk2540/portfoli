@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
+import { PaperPlaneIcon } from '../Icons';
 const ContactSection = () => {
-    const [status, setStatus] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setStatus('Sending...');
+        if (isSubmitting) {
+            return;
+        }
+
+        setIsSubmitting(true);
+        setIsSuccess(false);
+
+        // Simulate API call
         setTimeout(() => {
-            setStatus('Message sent successfully!');
+            setIsSuccess(true);
             e.target.reset();
-            setTimeout(() => setStatus(''), 3000);
-        }, 1500);
+
+            // Hide animation after a delay
+            setTimeout(() => {
+                setIsSubmitting(false);
+                setIsSuccess(false);
+            }, 3000);
+        }, 2000);
     };
 
     return (
@@ -17,7 +31,22 @@ const ContactSection = () => {
             {/* Background decoration */}
             <div className="absolute inset-0 custom-grid-bg"></div>
             <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
-
+            {isSubmitting && (
+                <div className="fixed inset-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm z-[100] flex flex-col justify-center items-center overflow-hidden">
+                    <div className="relative w-full h-full flex justify-center items-center">
+                        {isSuccess ? (
+                            <div className="text-6xl animate-fade-in-up" role="img" aria-label="Success">
+                                🎉
+                            </div>
+                        ) : (
+                            <PaperPlaneIcon className="w-24 h-24 text-indigo-500 email-animation" />
+                        )}
+                    </div>
+                    <p className="absolute bottom-20 text-xl font-semibold text-indigo-500 animate-pulse">
+                        {isSuccess ? 'Thank You!' : 'Sending...'}
+                    </p>
+                </div>
+            )}
             <div className="container mx-auto px-6 relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                     Contact <span className="text-indigo-500 dark:text-indigo-400">Me</span>
@@ -44,7 +73,6 @@ const ContactSection = () => {
                                 Send Message
                             </button>
                         </div>
-                        {status && <p className="text-center mt-4 text-green-500">{status}</p>}
                     </form>
                 </div>
             </div>

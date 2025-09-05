@@ -10,21 +10,6 @@ const AboutSection = () => {
 
             <style>
                 {`
-                    .smoke-container span {
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        width: 50px;
-                        height: 50px;
-                        background: rgba(255, 255, 255, 0.1);
-                        border-radius: 50%;
-                        filter: blur(20px);
-                        opacity: 0;
-                        pointer-events: none;
-                        animation-duration: 3s;
-                        animation-timing-function: linear;
-                        animation-iteration-count: infinite;
-                    }
 
                     .group:hover .smoke-container span {
                         animation-name: smoke-animation;

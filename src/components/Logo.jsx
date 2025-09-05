@@ -21,9 +21,7 @@ const Logo = () => {
           AK
         </span>
       </div>
-      <span className="text-2xl font-bold text-slate-800 dark:text-white tracking-wider group-hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300">
-        Abhishek Kumar
-      </span>
+     
     </a>
   );
 };
