@@ -23,7 +23,7 @@ const ProjectsSection = () => {
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
             liveUrl: 'https://real-time-crypto-price-tracker-theta.vercel.app/',
             repoUrl: 'https://github.com/abhishekk2540/Real-Time-Crypto-Price-Tracker',
-            imageUrl: '/Screenshot (93).png'
+            imageUrl: 'public/Screenshot (101).png'
         },
        
         {
