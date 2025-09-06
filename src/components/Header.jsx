@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { MenuIcon, MoonIcon, SunIcon, XIcon } from '../Icons';
+import { MenuIcon, XIcon } from '../Icons';
 import Logo from './Logo';
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
         { href: '#contact', label: 'CONTACT' },
     ];
 
-    const resumeLink = { href: '/UpdatedCV2[1].pdf', label: 'RESUME CV', download: 'Abhishek_Kumar_Resume.pdf' };
+    const resumeLink = { href: '/UpdatedCV2[1].pdf', label: 'RESUME CV' };
 
     const scrollTo = (e, id) => {
         e.preventDefault();
@@ -50,7 +50,6 @@ const Header = () => {
                     ))}
                     <a
                         href={resumeLink.href}
-                        download={resumeLink.download}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg shadow-indigo-500/30 text-sm"
@@ -82,7 +81,6 @@ const Header = () => {
                     ))}
                     <a
                         href={resumeLink.href}
-                        download={resumeLink.download}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => setIsOpen(false)}

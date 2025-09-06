@@ -12,9 +12,9 @@ const EducationSection = () => {
         {
             degree: 'Master of Computer Application',
             institution: 'Abes Engineering College - Ghaziabad',
-            date: '2022 - 2025',
+            date: '2022 - 2024',
             details: 'Specialized in advanced computer science concepts, including AI and modern web technologies, to build a strong foundation for a career in software development.',
-            percentage: '71.9% '
+            percentage: '71.9%'
         }
     ];
 
