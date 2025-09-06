@@ -9,31 +9,29 @@ import ExperienceSection from './components/ExperienceSection';
 import EducationSection from './components/EducationSection';
 export default function App() {
   const [theme, setTheme] = useState(null);
-  
+
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else {
-        setTheme(systemPrefersDark ? 'dark' : 'light');
-    }
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleChange = () => {
+      setTheme(mediaQuery.matches ? 'dark' : 'light');
+    };
+
+    // Set the initial theme
+    handleChange();
+
+    // Listen for changes
+    mediaQuery.addEventListener('change', handleChange);
+
+    // Cleanup listener on unmount
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   useEffect(() => {
     if (theme) {
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-        localStorage.setItem('theme', theme);
+      document.documentElement.classList.toggle('dark', theme === 'dark');
     }
   }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
 
   const GlobalStyles = () => (
     <style>{`
@@ -81,7 +79,7 @@ export default function App() {
   return (
     <div className="antialiased transition-colors duration-300 bg-white dark:bg-slate-900">
       <GlobalStyles />
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header theme={theme} />
       <main>
         <HeroSection />
         <AboutSection />

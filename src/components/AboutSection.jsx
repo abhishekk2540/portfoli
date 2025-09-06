@@ -3,7 +3,7 @@ const AboutSection = () => {
     const skills = ['React', 'Next.js', 'Tailwind CSS', 'Material-UI', 'JavaScript (ES6+)', 'TypeScript', 'Node.js', 'Git'];
     
     return (
-        <section id="about" className="py-20 text-slate-800 dark:text-white relative overflow-hidden">
+        <section id="about" className="py-16 text-slate-800 dark:text-white relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 custom-grid-bg"></div>
             <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
@@ -43,7 +43,7 @@ const AboutSection = () => {
                     .skill-item { animation: skill-pop-in 0.4s ease-out forwards; opacity: 0; }
                 `}
             </style>
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-6 mt-[-68px] relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                     About <span className="text-indigo-500 dark:text-indigo-400">Me</span>
                 </h2>
@@ -64,7 +64,7 @@ const AboutSection = () => {
                     </div>
                     <div className="md:w-2/3">
                         <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
-                            I'm a final-year Master's student specializing in building <span className="text-indigo-500 dark:text-indigo-400 font-semibold">intelligent</span>, <span className="text-indigo-500 dark:text-indigo-400 font-semibold">user-centric</span> web solutions where modern development meets <span className="text-indigo-500 dark:text-indigo-400 font-semibold">AI</span>. I am passionate about transforming complex challenges into elegant, high-impact digital experiences.
+                            As a recent Master of Computer Application graduate, I am eager to launch my career in software development. I specialize in building <span className="text-indigo-500 dark:text-indigo-400 font-semibold">intelligent</span> and <span className="text-indigo-500 dark:text-indigo-400 font-semibold">user-centric</span> web solutions, with a passion for integrating <span className="text-indigo-500 dark:text-indigo-400 font-semibold">AI</span> to create high-impact digital experiences.
                         </p>
                         <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
                             Proficient in technologies like <span className="text-indigo-500 dark:text-indigo-400 font-semibold">React</span> and <span className="text-indigo-500 dark:text-indigo-400 font-semibold">Next.js</span>, I am committed to writing clean, scalable code. I am now seeking a full-time opportunity to apply my skills and contribute to a forward-thinking team.

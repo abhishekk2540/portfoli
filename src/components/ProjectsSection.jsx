@@ -25,19 +25,12 @@ const ProjectsSection = () => {
             repoUrl: 'https://github.com/abhishekk2540/Real-Time-Crypto-Price-Tracker',
             imageUrl: '/Screenshot (93).png'
         },
-        {
-            title: 'Calculator',
-            description: 'A responsive and functional calculator application built with fundamental web technologies, providing a clean interface for basic arithmetic operations.',
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            liveUrl: 'https://calculator-two-rho-34.vercel.app/',
-            repoUrl: 'https://github.com/abhishekk2540/Calculator',
-            imageUrl: '/Screenshot (94).png'
-        },
+       
         {
             title: 'Conference Expense Planner',
             description: 'A responsive application for planning and managing conference expenses, built with React and styled with a combination of Tailwind CSS and Material-UI for a modern user interface.',
             tech: ['React', 'Tailwind CSS', 'MUI'],
-            liveUrl: 'https://vercel.com/coderiserrs-projects/conference-event-planner',
+            liveUrl: 'https://conference-event-planner-ivory.vercel.app/',
             repoUrl: 'https://github.com/abhishekk2540/Conference-Event-planner',
             imageUrl: '/Screenshot (95).png'
         },
@@ -45,15 +38,22 @@ const ProjectsSection = () => {
             title: 'GymBuddy',
             description: 'A web application to help users track their workouts and fitness progress, built with a focus on a simple and intuitive user interface using core web technologies.',
             tech: ['HTML', 'CSS', 'JavaScript'],
-            liveUrl: '#', // TODO: Replace with actual live URL
+            liveUrl: 'https://gym-buddy-wheat.vercel.app/',
             repoUrl: 'https://github.com/abhishekk2540/GymBuddy',
             imageUrl: '/Screenshot (97).png'
+        },
+         {
+            title: 'Ecommerce',
+            description: 'Designed and developed a modern e-commerce front-end using Next.js and Tailwind CSS. Features a responsive UI and product carousels with a slider library for an intuitive shopping experience.',
+            tech: ['Next.js', 'React', 'Tailwind CSS'],
+            liveUrl: 'https://ecommerce-five-snowy-84.vercel.app/',
+            repoUrl: 'https://github.com/abhishekk2540/Ecommerce',
+            imageUrl: '/Screenshot (99).png'
         },
     ];
 
     return (
-        <section id="projects" className="py-20 text-slate-800 dark:text-white relative overflow-hidden">
-            {/* Background decoration */}
+        <section id="projects" className="py-16 text-slate-800 dark:text-white relative overflow-hidden">
             <div className="absolute inset-0 custom-grid-bg"></div>
             <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
 

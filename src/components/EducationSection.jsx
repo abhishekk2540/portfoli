@@ -12,14 +12,14 @@ const EducationSection = () => {
         {
             degree: 'Master of Computer Application',
             institution: 'Abes Engineering College - Ghaziabad',
-            date: '2023 - 2025',
-            details: 'Currently specializing in advanced computer science concepts, including AI and modern web technologies.',
-            percentage: '71.7% Aggregate'
+            date: '2022 - 2025',
+            details: 'Specialized in advanced computer science concepts, including AI and modern web technologies, to build a strong foundation for a career in software development.',
+            percentage: '71.9% '
         }
     ];
 
     return (
-        <section id="education" className="py-20 text-slate-800 dark:text-white relative overflow-hidden">
+        <section id="education" className="py-16 text-slate-800 dark:text-white relative overflow-hidden">
             <div className="absolute inset-0 custom-grid-bg"></div>
             <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
 

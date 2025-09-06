@@ -22,7 +22,7 @@ const Header = () => {
         { href: '#contact', label: 'CONTACT' },
     ];
 
-    const resumeLink = { href: '/UpdatedCV2[1].pdf', label: 'RESUME CV', download: true };
+    const resumeLink = { href: '/UpdatedCV2[1].pdf', label: 'RESUME CV', download: 'Abhishek_Kumar_Resume.pdf' };
 
     const scrollTo = (e, id) => {
         e.preventDefault();
@@ -57,16 +57,10 @@ const Header = () => {
                     >
                         {resumeLink.label}
                     </a>
-                    {/* <button onClick={toggleTheme} className="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none transition-colors duration-300">
-                        {theme === 'light' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
-                    </button> */}
                 </nav>
 
                 {/* Mobile Controls */}
                 <div className="md:hidden flex items-center space-x-4">
-                    {/* <button onClick={toggleTheme} className="text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none transition-colors duration-300">
-                        {theme === 'light' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
-                    </button> */}
                     <button onClick={() => setIsOpen(!isOpen)} className="text-slate-800 dark:text-white focus:outline-none">
                         {isOpen ? <XIcon className="w-6 h-6"/> : <MenuIcon className="w-6 h-6"/>}
                     </button>

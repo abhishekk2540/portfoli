@@ -5,7 +5,7 @@ const ExperienceSection = () => {
     {
       title: "Frontend Developer Intern",
       company: "Arraylog IT Solutions Pvt. Ltd.",
-      date: "June 2025 - Present",
+      date: "June 2024 - Present",
       description: [
         "Developed and maintained responsive user interfaces using React and Tailwind CSS.",
         "Collaborated with the design team to implement new features and improve user experience.",
@@ -15,7 +15,7 @@ const ExperienceSection = () => {
     {
       title: "Web Development Contributor",
       company: "Open Source Project-Drip UI",
-      date: "Jun 2023 - Feb 2022",
+      date: "Feb 2023 - Jun 2023",
       description: [
         "Developed and prebuilt Shadow Button and Animated Button components to the Drip UI Library,improving reusability and speeding up UI integration by 40%",
         "Enabling developers to implement UI elements instantly by copying code snip.",
@@ -26,7 +26,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="py-20 text-slate-800 dark:text-white relative overflow-hidden"
+      className="py-16 text-slate-800 dark:text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 custom-grid-bg"></div>
       <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 -translate-y-1/2"></div>
