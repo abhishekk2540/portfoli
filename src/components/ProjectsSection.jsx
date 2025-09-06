@@ -21,7 +21,7 @@ const ProjectsSection = () => {
             title: 'Real Time Crypto Prices Tracker',
             description: 'Developed a full-stack MERN application to track real-time cryptocurrency prices. Implemented a RESTful API for data fetching and user authentication for a personalized experience.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-            liveUrl: 'https://vercel.com/coderiserrs-projects/real-time-crypto-price-tracker',
+            liveUrl: 'https://real-time-crypto-price-tracker-theta.vercel.app/',
             repoUrl: 'https://github.com/abhishekk2540/Real-Time-Crypto-Price-Tracker',
             imageUrl: '/Screenshot (93).png'
         },
