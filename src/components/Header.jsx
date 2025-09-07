@@ -22,7 +22,7 @@ const Header = () => {
         { href: '#contact', label: 'CONTACT' },
     ];
 
-    const resumeLink = { href: '/UpdatedCV2[1].pdf', label: 'RESUME CV' };
+    const resumeLink = { href: 'public/ResumeCV.pdf', label: 'RESUME CV' };
 
     const scrollTo = (e, id) => {
         e.preventDefault();
